@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="formm.css">
+    <script src="formm.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <form >
+           <h3>Let contact</h3>
+           <input type="text" id="name" placeholder="Your Name Here" required name="name">
+           <div class="error-hint" id="nerror">Your name is required here</div>
+           <input type="email" id="email" placeholder="Email Id Here" required name="email">
+           <div class="error-hint " id="emerror">Your email is required here</div>
+           <input type="password" id="password" placeholder="password Here" required name="password">
+           <span onclick="myfun()" class="eye">
+              <i class="fa-solid fa-eye" id="hide1"></i>  
+             <i class="fa-solid fa-eye-slash" id="hide2"></i>
+         </span>
+           <div class="error-hint" id="passerror">Your password is required here</div>
+           <input type="text" id="phone" placeholder="Phone no. Here" required name="Phone">
+           <div class="error-hint" id="numerror">Your number is required here</div>
+           <textarea  id="message"  rows="4" placeholder="How can we help you?"></textarea>
+           <button type="submit" value="add" onclick="abc()">Send</button>
+        </form>
+        <div class="thanks">
+           <p>thank you for your  feed back</p>
+        </div>
+   </div>
+    
+</body>
+</html>
